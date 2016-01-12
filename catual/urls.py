@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from catual.core.views import home
+from catual.core.views import home, olimpo
 
 urlpatterns = [
     url(r'^$', home),
+    url(r'^olimpo/$', olimpo),
     url(r'^admin/', admin.site.urls),
 ]
