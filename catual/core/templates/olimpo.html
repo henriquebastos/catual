@@ -1,41 +1,19 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Condomínio Atual</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
 
-    <!-- Bootstrap -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-</head>
-<body>
+{% block title %}Edifício Olimpo{% endblock title %}
 
-<!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!--  -->
-        <div id="navbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-          </ul>
-        </div><!--/. -->
-      </div>
-    </nav>
-
-<!-- Begin page content -->
-    <div class="container">
-      <div class="page-header">
+{% block content %}
+<div class="container">
+    <div class="page-header">
         <h1>Edifício Olimpo</h1>
-      </div>
-      <p class="lead">Se você não é morador deste condomínio, volte à página inicial. Se é o seu e ainda
-          não tem acesso, deverá solicitar ao síndico o cadastro do seu email. O Condomínio Atual é um sistema seguro que
-          utiliza tecnologias de integração com o Google para visualização de documentos restritos.</p>
-        <div class="container">
+    </div>
+    <p class="lead">Se você não é morador deste condomínio, volte à página inicial. Se é o seu e ainda
+    não tem acesso, deverá solicitar ao síndico o cadastro do seu email. O Condomínio Atual é um sistema seguro que
+    utiliza tecnologias de integração com o Google para visualização de documentos restritos.</p>
+    <div class="container">
         <div class="row">
             <div class="col-md-6">
-               <h2>Arquivos</h2>
+                <h2>Arquivos</h2>
                 <hr>
                 <h3>Regulamentos</h3>
                 <a href="https://drive.google.com/file/d/0B6EoP5kaEOYOTjA1S1NnMTlQV1U/view?usp=sharing"><span class="glyphicon glyphicon-file"></span> Constituição de condomínio</a>
@@ -46,27 +24,13 @@
                 <a href="https://drive.google.com/open?id=0B6EoP5kaEOYOYzBZZDlmVGFmUFU"><span class="glyphicon glyphicon-education"></span> Barulho no condomínio</a>
                 <hr>
             </div>
-            <div class="col-md-6">
+                <div class="col-md-6">
                 <h2>Registro de ocorrências</h2>
                 <hr>
                 <a href="https://docs.google.com/forms/d/1e_fXx0AR_U2KGstuHDysnIql4fhmFsXujnJOw1lwA2Q/viewform"><span class="glyphicon glyphicon-edit"></span> Formulário</a
             </div>
         </div>
-        </div>
-
-
-        <hr>
-        <p>Volte à <a href="../">página inicial</a> ou vá ao menu de navegação</p>
-
     </div>
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Marcus Gabaldo - 2016</p>
-      </div>
-    </footer>
-
-    <!-- jQuery (necessario para os plugins Javascript Bootstrap) -->
-    <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-</body>
-</html>
+    <p>Volte à <a href="../">página inicial</a> ou vá ao menu de navegação</p>
+</div>
+{% endblock content %}
