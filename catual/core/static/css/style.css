@@ -12,6 +12,18 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.header {
+    margin-right:10%;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -21,23 +33,19 @@ body {
   background-color: #f5f5f5;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body > .container {
-  padding: 60px 15px 0;
-}
-.container .text-muted {
-  margin: 20px 0;
+.footer{
+    background-color:#3f51b5;
 }
 
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+.formulario {
+    text-align: center;
 }
 
-code {
-  font-size: 80%;
+.jumbotron {
+    background-color: #6c5296;
+    color: white;
+}
+
+.condominios {
+    text-align: center;
 }

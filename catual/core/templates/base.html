@@ -10,32 +10,14 @@
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
 </head>
 <body>
 
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div id="navbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="../"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+{% block content %}{% endblock content %}
 
-{% block content %}
-
-{% endblock content %}
-
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Marcus Gabaldo - 2016</p>
-    </div>
-</footer>
-
-    <!-- jQuery (necessario para os plugins Javascript Bootstrap) -->
-    <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- jQuery (necessario para os plugins Javascript Bootstrap) -->
+<script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
 </html>
