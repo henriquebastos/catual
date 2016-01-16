@@ -16,11 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from catual.core.views import home, ocorrencias, olimpo
+from catual.core.views import home, ocorrencias, olimpo, eventos
 
 urlpatterns = [
     url(r'^$', home),
     url(r'^ocorrencias/$', ocorrencias),
+    url(r'^eventos/$', eventos),
     url(r'^olimpo/$', olimpo),
     url(r'^admin/', admin.site.urls),
 ]
