@@ -44,54 +44,17 @@
     </div>
     <!-- Fim da Barra de Navegação -->
 
-    <!-- Início do container principal-->
     <div class="container">
-        <div class="jumbotron text-center">
-            <h1>Condomínio Atual</h1>
-            <p>Utilize métodos eficazes para gerir o seu condomínio. Esta é uma ferramenta que
-                trabalha exclusivamente com a necessidade do síndico e não perde tempo com processos
-                desnecessários.</p>
-        </div>
-
-        <h2>Acesse seu condomínio</h2>
-        <p class="text-muted">Ao acessar o seu condomínio pelo link abaixo, você será direcionado a uma página que contem
-        documentos específicos para você.</p>
-        <hr />
-        <div class="row">
-            <div class="col-md-4">
-                <a href="{% url 'olimpo:painel' %}" class="thumbnail">
-                    <img src="{% static 'img/olimpo-350.jpg' %}" alt="Edifício Olimpo">
-                </a>
-                <h3>Edifício Olimpo</h3>
-                <p>Curitiba/PR</p>
-                <a href="{% url 'olimpo:painel' %}" class="btn btn-info">Acessar Condomínio</a>
-            </div>
-            <div class="col-md-4">
-                <a href="#" class="thumbnail">
-                    <img src="{% static 'img/modelo.jpg' %}" alt="Edifício Modelo">
-                </a>
-                <h3>Edifício Modelo</h3>
-                <p>Curitiba/PR</p>
-                <a href="#" class="btn btn-info">Acessar Condomínio</a>
-            </div>
-            <div class="col-md-4">
-                <a href="#" class="thumbnail">
-                    <img src="{% static 'img/modelo.jpg' %}" alt="Edifício Modelo">
-                </a>
-                <h3>Edifício Modelo</h3>
-                <p>Curitiba/PR</p>
-                <a href="#" class="btn btn-info">Acessar Condomínio</a>
-            </div>
-        </div>
-
-    <hr>
-
-    <footer>
-        <p>&copy; 2016 - Marcus Gabaldo.</p>
-    </footer>
-
-</div> <!-- Fim do container principal-->
-
+        <form class="form-signin" method="post">{% csrf_token %}
+            <h2 class="form-signin-heading">Olimpo</h2>
+            {% for field in form %}
+                <div class="input-block-level">{{ field.label_tag }}</div>
+                <div class="input-block-level">{{ field }}</div>
+                {{ field.errors }}
+            {% endfor %}
+            <button class="btn btn-large btn-primary" type="submit">Entrar</button>
+        </form>
+    </div> <!-- /container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

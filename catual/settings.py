@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'catual.core',
+    'catual.olimpo',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -121,3 +122,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Auth
+LOGIN_URL = 'olimpo:login'
+LOGIN_REDIRECT_URL = 'olimpo:painel'
+LOGOUT_URL = 'olimpo:logout'
