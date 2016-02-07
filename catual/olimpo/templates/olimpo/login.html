@@ -44,16 +44,22 @@
     </div>
     <!-- Fim da Barra de Navegação -->
 
-    <div class="container">
-        <form class="form-signin" method="post">{% csrf_token %}
-            <h2 class="form-signin-heading">Olimpo</h2>
-            {% for field in form %}
-                <div class="input-block-level">{{ field.label_tag }}</div>
-                <div class="input-block-level">{{ field }}</div>
-                {{ field.errors }}
-            {% endfor %}
-            <button class="btn btn-large btn-primary" type="submit">Entrar</button>
-        </form>
+    <div class="container-fluid">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h2>Edifício Olimpo</h2></div>
+            <div class="panel-body">
+                <form class="form-signin" method="post">{% csrf_token %}
+                    {% for field in form %}
+                        <div class="input-block-level">{{ field.label_tag }}</div>
+                        <div class="input-block-level">{{ field }}</div>
+                        {{ field.errors }}
+                    {% endfor %}
+                    <button class="btn btn-large btn-primary" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+
     </div> <!-- /container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
