@@ -5,11 +5,10 @@
 
 body {
   padding-top: 70px;
-  padding-bottom: 100px;
 }
 
 .jumbotron {
-  background-color: #337ab7;
+  background-color: #5A4181;
   color: #FFFFFF;
 }
 
@@ -30,7 +29,7 @@ body {
   overflow: hidden;
 }
 
-.panel {
+.form-signin {
   width: 300px;
   margin: auto;
 }
@@ -45,5 +44,10 @@ body {
 }
 
 .agenda {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
   text-align: center;
 }

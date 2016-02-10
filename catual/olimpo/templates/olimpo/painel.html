@@ -21,84 +21,89 @@
     </head>
     <body>
 
-    <!-- Início da Barra de Navegação -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{% url 'home' %}">Condomínio Atual</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{% url 'olimpo:painel' %}">Painel</a></li>
-                    <li class=""><a href="{% url 'olimpo:ocorrencias' %}">Ocorrências</a></li>
-                    <li class=""><a href="{% url 'olimpo:eventos' %}">Eventos</a></li>
-                    <li class=""><a href="{% url 'olimpo:logout' %}">Sair</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Fim da Barra de Navegação -->
-
-    <div class="container">
-        <h1>Edifício Olimpo</h1>
-        <hr/>
-        <h2>Avisos</h2>
-        <div class="alert alert-warning">
-            Prezados condôminos, o síndico estará disponível para atendimento aos condôminos todas as
-            quartas-feiras, às 19h00.
-        </div>
-        <div class="alert alert-danger">
-            Prezados condôminos, os boletos para o pagamento da taxa de condomínio foram colocadas
-            nas suas respectivas caixas de correio.
-        </div>
-        <hr/>
-        <h2>Documentos Importantes</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <h3><span class="glyphicon glyphicon-file"></span> Regulamentos</h3>
-                <ul>
-                <li><a href="https://drive.google.com/file/d/0B6EoP5kaEOYOTjA1S1NnMTlQV1U/view?usp=sharing">Constituição de condomínio</a></li>
-                </ul>
-            </div>
-                <div class="col-md-4">
-                <h3><span class="glyphicon glyphicon-education"></span> Orientações</h3>
-                <ul>
-                <li><a href="https://drive.google.com/open?id=0B6EoP5kaEOYOYzBZZDlmVGFmUFU">Barulho no condomínio</a></li>
-                </ul>
-            </div>
-                <div class="col-md-4">
-                <h3><span class="glyphicon glyphicon-list-alt"></span> Relatórios</h3>
+        <!-- Início da Barra de Navegação -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'home' %}">Condomínio Atual</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="{% url 'olimpo:painel' %}">Painel</a></li>
+                        <li class=""><a href="{% url 'olimpo:ocorrencias' %}">Ocorrências</a></li>
+                        <li class=""><a href="{% url 'olimpo:eventos' %}">Eventos</a></li>
+                        <li class=""><a href="{% url 'olimpo:logout' %}">Sair</a></li>
+                    </ul>
                 </div>
             </div>
-        <hr>
-        <h2>Agenda de eventos</h2>
-        <br>
-        <div class="container-fluid">
-        <div class="agenda">
-            <iframe src="https://calendar.google.com/calendar/embed?src=olimpo350%40gmail.com&ctz=America/Sao_Paulo"
-                    width="100%" height="400px" frameborder="0" scrolling="no"></iframe>
         </div>
-        </div>
+        <!-- Fim da Barra de Navegação -->
 
-        <hr>
+        <div class="container">
+            <h1>Edifício Olimpo</h1>
+            <hr/>
+            <h2>Avisos</h2>
+            <div class="alert alert-warning">
+                Prezados condôminos, o síndico estará disponível para atendimento aos condôminos todas as
+                quartas-feiras, às 19h00.
+            </div>
+
+            <div class="alert alert-danger">
+                Prezados condôminos, os boletos para o pagamento da taxa de condomínio foram colocadas
+                nas suas respectivas caixas de correio.
+            </div>
+            <hr/>
+            <h2>Documentos Importantes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><span class="glyphicon glyphicon-file"></span> Regulamentos</h3>
+                    <ul>
+                    <li><a href="https://drive.google.com/file/d/0B6EoP5kaEOYOTjA1S1NnMTlQV1U/view?usp=sharing">Constituição de condomínio</a></li>
+                    </ul>
+                </div>
+                    <div class="col-md-4">
+                    <h3><span class="glyphicon glyphicon-education"></span> Orientações</h3>
+                    <ul>
+                    <li><a href="https://drive.google.com/open?id=0B6EoP5kaEOYOYzBZZDlmVGFmUFU">Barulho no condomínio</a></li>
+                    </ul>
+                </div>
+                    <div class="col-md-4">
+                    <h3><span class="glyphicon glyphicon-list-alt"></span> Relatórios</h3>
+                    </div>
+                </div>
+            <hr/>
+            <h2>Agenda de eventos</h2>
+            <br/>
+            <div class="container-fluid">
+                <div class="agenda">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=olimpo350%40gmail.com&ctz=America/Sao_Paulo"
+                            width="100%" height="400px" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+            <hr>
+        </div> <!-- Fim do container principal-->
 
         <footer>
-            <p>&copy; 2016 - Marcus Gabaldo.</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy; 2016 - Condomínio Atual.</p>
+                    </div>
+                </div>
+            </div>
         </footer>
 
-    </div> <!-- Fim do container principal-->
 
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-  </body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    </body>
 </html>
